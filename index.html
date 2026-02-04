@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MidCentury Cultural Centre</title>
+  <meta name="description" content="Midcentury-style cultural centre — classes, events, groups, join and donate." />
+
+  <!-- Google Fonts (modern sans-serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <h1>MidCentury Cultural</h1>
+          <p class="tag">Community • Parayanam • Learning</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Groups</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">Donations</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Flash Announcements -->
+    <div class="announcements" role="region" aria-live="polite">
+      <div class="announcements-inner">
+        <strong>Announcements:</strong>
+        <div id="announcement-strip" class="announcement-strip">
+          <span class="announcement-item">Today: Special Parayanam at 5:30 PM — everyone welcome</span>
+          <span class="announcement-item">New: Beginners' Bharatanatyam class — enroll now</span>
+          <span class="announcement-item">Fundraiser Dinner: Feb 20 — reserve your seat</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h2>Welcome to our midcentury-inspired community</h2>
+        <p class="lead">Join classes, events and circles focused on cultural practice, study and fellowship.</p>
+        <div class="hero-ctas">
+          <a class="btn -primary" href="#dashboard">Today's Dashboard</a>
+          <a class="btn -ghost" href="#classes">See Classes</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- Photo carousel -->
+        <div class="carousel" aria-roledescription="carousel">
+          <button class="carousel-btn prev" aria-label="Previous photo">‹</button>
+          <div class="carousel-track" id="carousel-track">
+            <img src="assets/photo1.svg" alt="Group chanting" loading="lazy">
+            <img src="assets/photo2.svg" alt="Classroom session" loading="lazy">
+            <img src="assets/photo3.svg" alt="Community event" loading="lazy">
+          </div>
+          <button class="carousel-btn next" aria-label="Next photo">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Dashboard -->
+    <section id="dashboard" class="dashboard container" aria-labelledby="dashboard-heading">
+      <h3 id="dashboard-heading">Daily Dashboard</h3>
+      <p class="muted">Today's schedule — classes and parayanams with quick join links.</p>
+
+      <div id="dashboard-list" class="dashboard-list" role="list">
+        <!-- JS will populate today's items here -->
+      </div>
+
+      <p class="muted small">All join buttons open a Google Form for registration/RSVP.</p>
+    </section>
+
+    <!-- Classes preview -->
+    <section id="classes" class="container site-section">
+      <h3>Classes</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Bharatanatyam — Beginners</h4>
+          <p class="meta">Mon & Wed • 6:00 PM</p>
+          <p>Introductory course focusing on basic adavus and rhythm.</p>
+          <a class="btn -cta" href="https://forms.gle/YOUR_GOOGLE_FORM_1" target="_blank" rel="noopener">Join Class</a>
+        </article>
+
+        <article class="card">
+          <h4>Vedic Parayanam</h4>
+          <p class="meta">Daily • 5:30 PM</p>
+          <p>Group recitation and study. All levels welcome.</p>
+          <a class="btn -cta" href="https://forms.gle/YOUR_GOOGLE_FORM_2" target="_blank" rel="noopener">Join Parayanam</a>
+        </article>
+
+        <article class="card">
+          <h4>Classical Music — Voice</h4>
+          <p class="meta">Sat • 10:00 AM</p>
+          <p>Vocal technique and repertoire for developing singers.</p>
+          <a class="btn -cta" href="https://forms.gle/YOUR_GOOGLE_FORM_3" target="_blank" rel="noopener">Reserve Spot</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Events & Groups -->
+    <section class="container site-section">
+      <div class="two-col">
+        <div>
+          <h3>Upcoming Events</h3>
+          <ul class="events-list">
+            <li><strong>Fundraiser Dinner</strong> — Feb 20 • Reserve</li>
+            <li><strong>Heritage Lecture</strong> — Mar 2 • Open to public</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Community Groups</h3>
+          <ul class="events-list">
+            <li>Women's Circle — Weekly</li>
+            <li>Youth Study Group — Fortnightly</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Join / Donations -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Join Us</h4>
+            <p>Become a member to receive event invites and class discounts.</p>
+            <a class="btn -primary" href="#">Join Now</a>
+          </div>
+
+          <div>
+            <h4>Support</h4>
+            <p>Help keep programming free and accessible.</p>
+            <a class="btn -ghost" href="#">Donate</a>
+          </div>
+
+          <div>
+            <h4>Contact</h4>
+            <address>
+              123 Cultural Lane<br>
+              City • ZIP<br>
+              <a href="mailto:info@example.org">info@example.org</a>
+            </address>
+          </div>
+        </div>
+
+        <p class="copyright">© <span id="year"></span> MidCentury Cultural</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
